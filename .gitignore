@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+*.log
+.locale-snapshot-recovery/
+.locale-guard-recovery/

@@ -1,0 +1,61 @@
+{
+  "name": "payload-locale-snapshot",
+  "version": "0.1.0",
+  "description": "Prevents silent data loss of localized blocks and arrays in Payload CMS with the PostgreSQL adapter.",
+  "license": "MIT",
+  "author": "Muzammil Ali <muzammilali07.03.05@gmail.com>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "payload",
+    "payloadcms",
+    "payload-plugin",
+    "postgres",
+    "postgresql",
+    "localization",
+    "i18n",
+    "locale",
+    "data-loss",
+    "blocks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-muzammilali/payload-locale-snapshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/the-muzammilali/payload-locale-snapshot/issues"
+  },
+  "homepage": "https://github.com/the-muzammilali/payload-locale-snapshot#readme",
+  "peerDependencies": {
+    "payload": "^3.0.0"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/pg": "^8.11.0",
+    "payload": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.20.0"
+  }
+}
